@@ -1,0 +1,109 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://source.unsplash.com/1600x900/?nature,calm') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333333;
+}
+
+/* Semi-transparent Form Container */
+.form-container {
+  width: 450px;
+  padding: 30px 35px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Heading Styling */
+h2 {
+  color: #4a90e2;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* Form Layout - Flexbox for Labels and Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Labels Styling */
+label {
+  flex: 0 0 120px;
+  text-align: left;
+  color: #555555;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+  background-color: #f8f8f8;
+  font-size: 0.95rem;
+  color: #333333;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.5);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3b78c7;
+  box-shadow: 0px 4px 10px rgba(59, 120, 199, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+  form div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  label {
+    text-align: center;
+  }
+}
